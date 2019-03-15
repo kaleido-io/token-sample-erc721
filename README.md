@@ -24,3 +24,13 @@ designating token operators
   ✓ operator now can transfer on behalf of currentOwner from specific approval (98ms)
   ✓ operator now can transfer on behalf of user1 from blanket approval (73ms)
 ```
+
+## Getting Started
+
+Instal [truffle](https://truffleframework.com/truffle)
+Install [Ganache](https://truffleframework.com/ganache) and start it
+
+```
+npm i
+truffle test
+``` 
