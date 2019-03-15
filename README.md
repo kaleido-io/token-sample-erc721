@@ -25,6 +25,26 @@ designating token operators
   ✓ operator now can transfer on behalf of user1 from blanket approval (73ms)
 ```
 
+#### Basic ERC721 with burning
+```
+contracts/ERC721BasicBurnable.sol
+
+constructor
+  ✓ initialized with the correct metadata and designates the deployer as a minter (104ms)
+  ✓ check the contract deployer balance is 0
+minting tokens
+  ✓ current owner can mint new tokens for themselves (219ms)
+  ✓ current owner can mint new tokens for user1 (268ms)
+designating token operators to burn stuff up!
+  ✓ curent owner can designate an operator to manage their tokens (85ms)
+  ✓ checking the approved operator on token 1
+  ✓ blanket approval for operator to manager user1 assets (64ms)
+  ✓ checking the approved operator
+  ✓ user1 can burn his own token (68ms)
+  ✓ operator now can burn on behalf of currentOwner from specific approval (110ms)
+  ✓ operator now can burn on behalf of user1 from blanket approval (57ms)
+```
+
 ## Getting Started
 
 Instal [truffle](https://truffleframework.com/truffle)
